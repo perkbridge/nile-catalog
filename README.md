@@ -14,5 +14,16 @@ reference is `<registry>/<path>@<digest>`, for example `ghcr.io/perkbridge/nile-
 ## Adding a version
 
 Open a pull request that adds the version to the package's `versions` (newest first), updates `latest` if needed, and
-updates `updated_at`. A person reviews and merges it. `packages.json.sig` is reserved for a detached signature with the
-release key (not used yet).
+updates `updated_at`. A person reviews and merges it. The `version` label is free text such as `1.4.0` or `main-9f53c06`.
+
+## Signature
+
+`packages.json.sig` is an Ed25519 signature over the exact bytes of `packages.json`, made with the catalog key
+(`nile-catalog-1`). The Control Plane serves a catalog without a signature file as unsigned and refuses one whose
+signature does not verify. Every change to `packages.json` needs a new signature, made by the key holder with the
+Nile Control Plane tool:
+
+```
+control-plane release catalog-sign   --file packages.json --key <private key file> --key-id nile-catalog-1
+control-plane release catalog-verify --file packages.json
+```
