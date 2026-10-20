@@ -19,8 +19,8 @@ updates `updated_at`. A person reviews and merges it. The `version` label is fre
 ## Signature
 
 `packages.json.sig` is an Ed25519 signature over the exact bytes of `packages.json`, made with the catalog key
-(`nile-catalog-1`). The Control Plane serves a catalog without a signature file as unsigned and refuses one whose
-signature does not verify. Every change to `packages.json` needs a new signature, made by the key holder with the
+(`nile-catalog-1`). The Control Plane and the agents refuse a catalog without a valid signature (the Control Plane can be told to allow
+unsigned catalogs for development only). Every change to `packages.json` needs a new signature, made by the key holder with the
 Nile Control Plane tool:
 
 ```
