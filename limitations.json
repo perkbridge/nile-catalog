@@ -1,0 +1,70 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-25T14:40:00Z",
+  "versions": [
+    {
+      "version": "main-6091472",
+      "summary": "Demo-only preview. Connectors: MetaTrader 5 (one broker installer tested). Draft values below need the Product Owner's confirmation of what was actually tested for this version.",
+      "tested": {
+        "operating_systems": [
+          {
+            "name": "Ubuntu 24.04 LTS",
+            "arch": "x86_64",
+            "notes": "Tested on 24.04.5, kernel 6.8. Other systems are refused at setup."
+          }
+        ],
+        "runtime": [
+          { "component": "Docker Engine", "version": "29.9.0", "notes": "Installed and pinned by the provisioning tool." },
+          { "component": "Wine", "version": "9.0", "notes": "From Ubuntu; MT5 warns it prefers Wine 10 or later. CONFIRM: recent broker-dialog work targeted Wine 11.20." }
+        ],
+        "connectors": [
+          {
+            "connector": "mt5",
+            "name": "MetaTrader 5",
+            "tested_versions": ["build 6249"],
+            "notes": "Installed from one broker's own installer, on a demo account. CONFIRM: recent work referenced build 6283."
+          }
+        ]
+      },
+      "limitations": [
+        {
+          "title": "Demo accounts only",
+          "severity": "warning",
+          "connector": "mt5",
+          "description": "An open security question (#74) about where MT5/Wine may leave broker credentials outside the temporary session means only demo broker accounts are supported for now."
+        },
+        {
+          "title": "Not verified end-to-end on a real VPS",
+          "severity": "warning",
+          "description": "The Get-started steps were tested separately; a complete first run from the dashboard with a real MT5 terminal on a real server has not been recorded as one run."
+        },
+        {
+          "title": "Trading API orders not fully verified",
+          "severity": "warning",
+          "connector": "mt5",
+          "description": "Opt-in per deployment, demo accounts only. A real order was accepted once by an FTMO demo account but no verified filled or closed outcome; fills, closing, duplicate requests and reconciliation are not verified yet."
+        },
+        {
+          "title": "Sessions run once (no continuous mode yet)",
+          "severity": "info",
+          "description": "Continuous always-on sessions that survive a reboot are not available yet; a session runs once and is not restarted automatically."
+        },
+        {
+          "title": "No automatic backups",
+          "severity": "info",
+          "description": "No backups of servers or MT5 data are made."
+        },
+        {
+          "title": "Removing a server does not close broker positions",
+          "severity": "warning",
+          "description": "Deleting a container or server does not close positions; remove every deployment first (needs the agent connected). Docker, containerd and runtime images stay on the host, and a removed server's host key cannot be trusted again."
+        },
+        {
+          "title": "Only MetaTrader 5 is supported",
+          "severity": "info",
+          "description": "cTrader and other connectors are planned for later milestones; only MT5 is available today."
+        }
+      ]
+    }
+  ]
+}
