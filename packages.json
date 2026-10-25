@@ -14,7 +14,8 @@
         {
           "version": "main-6091472",
           "published_at": "2026-10-25T10:04:49Z",
-          "digest": "sha256:f102f4c50eee3d07b1250583d87e0347e39c680b9161caadd4cfbf252d816132"
+          "digest": "sha256:f102f4c50eee3d07b1250583d87e0347e39c680b9161caadd4cfbf252d816132",
+          "notes": "Broker-search fixes for non-MetaQuotes brokers: accepts MT5 6283's narrower company dialog under Wine 11.20, starts the search with Enter, and finds servers.dat in the install dir. Supersedes main-b1f075f, whose older detector failed on these brokers."
         },
         {
           "version": "main-b1f075f",
