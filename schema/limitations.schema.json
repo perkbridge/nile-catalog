@@ -1,0 +1,119 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "nile-catalog limitations.json",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "updated_at",
+    "packages"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "updated_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "packages": {
+      "type": "array",
+      "maxItems": 50,
+      "items": {
+        "type": "object",
+        "required": [
+          "package",
+          "versions"
+        ],
+        "properties": {
+          "package": {
+            "type": "string",
+            "pattern": "^nile-[a-z0-9-]+-runtime$"
+          },
+          "versions": {
+            "type": "array",
+            "maxItems": 500,
+            "items": {
+              "type": "object",
+              "required": [
+                "version",
+                "tested_with",
+                "limitations"
+              ],
+              "properties": {
+                "version": {
+                  "type": "string"
+                },
+                "tested_with": {
+                  "type": "array",
+                  "maxItems": 40,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "os",
+                      "connector",
+                      "status"
+                    ],
+                    "properties": {
+                      "os": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                      },
+                      "connector": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 80
+                      },
+                      "status": {
+                        "enum": [
+                          "tested",
+                          "unverified",
+                          "unsupported"
+                        ]
+                      },
+                      "note": {
+                        "type": "string",
+                        "maxLength": 300
+                      }
+                    }
+                  }
+                },
+                "limitations": {
+                  "type": "array",
+                  "maxItems": 40,
+                  "items": {
+                    "type": "object",
+                    "required": [
+                      "status",
+                      "item",
+                      "description"
+                    ],
+                    "properties": {
+                      "status": {
+                        "enum": [
+                          "tested",
+                          "unverified",
+                          "unsupported"
+                        ]
+                      },
+                      "item": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 120
+                      },
+                      "description": {
+                        "type": "string",
+                        "minLength": 1,
+                        "maxLength": 600
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

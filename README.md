@@ -27,3 +27,20 @@ Nile Control Plane tool:
 control-plane release catalog-sign   --file packages.json --key <private key file> --key-id nile-catalog-1
 control-plane release catalog-verify --file packages.json
 ```
+
+## limitations.json
+
+What each version of a package was tested with and what it cannot do. The dashboard shows it under Help, Current
+limitations, per connector and per version. See `schema/limitations.schema.json`. Each version lists `tested_with`
+(operating system, connector with its version, status, optional note of at most 300 characters) and `limitations`
+(status, item, description of at most 600 characters). A status is `tested` (it was run and worked on a real host),
+`unverified` (not run, or not on a real host) or `unsupported` (it does not work or does not exist yet). Write only what
+was actually observed.
+
+The file is data only: it changes what the dashboard says, never what may be pulled or run. It is signed like
+`packages.json` and needs a new signature after every change:
+
+```
+control-plane release catalog-sign   --file limitations.json --key <private key file> --key-id nile-catalog-1
+control-plane release catalog-verify --file limitations.json
+```
