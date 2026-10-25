@@ -1,0 +1,124 @@
+{
+  "schema_version": 1,
+  "updated_at": "2026-10-25T15:00:00Z",
+  "packages": [
+    {
+      "package": "nile-mt5-runtime",
+      "versions": [
+        {
+          "version": "main-6091472",
+          "tested_with": [
+            {
+              "os": "Ubuntu 24.04 LTS (x86_64)",
+              "connector": "MetaTrader 5 build 6283",
+              "status": "unverified",
+              "note": "Image uses Wine 11.20. Not run on a real host yet."
+            },
+            {
+              "os": "Windows Server",
+              "connector": "MetaTrader 5",
+              "status": "unsupported",
+              "note": "Windows servers are planned (ADR-043)."
+            }
+          ],
+          "limitations": [
+            {
+              "status": "unverified",
+              "item": "MetaTrader 5 build 6283 under Wine 11.20",
+              "description": "This build has not been started on a real server with this image. Check it on a demo account before relying on it."
+            },
+            {
+              "status": "unverified",
+              "item": "Orders from the Trading API",
+              "description": "A real order was accepted by a broker demo account once, but fills, closing a position and reconciliation after an unclear outcome are not verified."
+            },
+            {
+              "status": "unsupported",
+              "item": "Other connectors",
+              "description": "Only MetaTrader 5 exists in this catalog today. cTrader and others are planned."
+            }
+          ]
+        },
+        {
+          "version": "main-b1f075f",
+          "tested_with": [
+            {
+              "os": "Ubuntu 24.04 LTS (x86_64)",
+              "connector": "MetaTrader 5 build 6283",
+              "status": "unverified",
+              "note": "Image uses Wine 11.20. Not run on a real host yet."
+            },
+            {
+              "os": "Windows Server",
+              "connector": "MetaTrader 5",
+              "status": "unsupported",
+              "note": "Windows servers are planned (ADR-043)."
+            }
+          ],
+          "limitations": [
+            {
+              "status": "unverified",
+              "item": "MetaTrader 5 build 6283 under Wine 11.20",
+              "description": "This build has not been started on a real server with this image. Check it on a demo account before relying on it."
+            },
+            {
+              "status": "unverified",
+              "item": "Orders from the Trading API",
+              "description": "A real order was accepted by a broker demo account once, but fills, closing a position and reconciliation after an unclear outcome are not verified."
+            },
+            {
+              "status": "unsupported",
+              "item": "Other connectors",
+              "description": "Only MetaTrader 5 exists in this catalog today. cTrader and others are planned."
+            }
+          ]
+        },
+        {
+          "version": "main-4aec5b4",
+          "tested_with": [
+            {
+              "os": "Ubuntu 24.04 LTS (x86_64)",
+              "connector": "MetaTrader 5 build 6249",
+              "status": "tested",
+              "note": "Wine 9.0 from Ubuntu, one broker's installer, demo account, 4 vCPUs and 8 GB of memory."
+            },
+            {
+              "os": "Ubuntu 24.04 LTS (x86_64)",
+              "connector": "MetaTrader 5 build 6274 and later",
+              "status": "unsupported",
+              "note": "Shows 'A debugger has been found' under this Wine (issue #314)."
+            },
+            {
+              "os": "Windows Server",
+              "connector": "MetaTrader 5",
+              "status": "unsupported",
+              "note": "Windows servers are planned (ADR-043)."
+            }
+          ],
+          "limitations": [
+            {
+              "status": "unverified",
+              "item": "Other brokers' installers",
+              "description": "Only one broker's installation has been tested."
+            },
+            {
+              "status": "unverified",
+              "item": "Orders from the Trading API",
+              "description": "A real order was accepted by a broker demo account once, but fills, closing a position and reconciliation after an unclear outcome are not verified."
+            },
+            {
+              "status": "unsupported",
+              "item": "MT5 features that need its built-in web browser",
+              "description": "The Wine browser components are not installed."
+            },
+            {
+              "status": "unsupported",
+              "item": "Other connectors",
+              "description": "Only MetaTrader 5 exists in this catalog today. cTrader and others are planned."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
