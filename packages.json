@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-10-25T10:04:49Z",
+  "updated_at": "2026-10-26T20:30:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -15,17 +15,20 @@
           "version": "main-6091472",
           "published_at": "2026-10-25T10:04:49Z",
           "digest": "sha256:f102f4c50eee3d07b1250583d87e0347e39c680b9161caadd4cfbf252d816132",
+          "transfer_bytes": 915502927,
           "notes": "Broker-search fixes for non-MetaQuotes brokers: accepts MT5 6283's narrower company dialog under Wine 11.20, starts the search with Enter, and finds servers.dat in the install dir. Supersedes main-b1f075f, whose older detector failed on these brokers."
         },
         {
           "version": "main-b1f075f",
           "published_at": "2026-10-24T17:04:04Z",
-          "digest": "sha256:948760cbd7b9ed3235391835c0055b5a5a0f6b3b758968dbc584cf445b186ed4"
+          "digest": "sha256:948760cbd7b9ed3235391835c0055b5a5a0f6b3b758968dbc584cf445b186ed4",
+          "transfer_bytes": 915502453
         },
         {
           "version": "main-4aec5b4",
           "published_at": "2026-10-22T07:20:24Z",
-          "digest": "sha256:6b4fd2b156a67ca43602f74e046ea0febb105c0e35e97798c7a269f8f7c9fb28"
+          "digest": "sha256:6b4fd2b156a67ca43602f74e046ea0febb105c0e35e97798c7a269f8f7c9fb28",
+          "transfer_bytes": 630861391
         }
       ]
     }

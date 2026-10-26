@@ -16,6 +16,16 @@ reference is `<registry>/<path>@<digest>`, for example `ghcr.io/perkbridge/nile-
 Open a pull request that adds the version to the package's `versions` (newest first), updates `latest` if needed, and
 updates `updated_at`. A person reviews and merges it. The `version` label is free text such as `1.4.0` or `main-9f53c06`.
 
+`transfer_bytes` (optional) is the download size the dashboard shows: the compressed bytes of the image, the sum of the
+layer sizes in its manifest (not the config blob, and not the disk used after the pull, which is several times
+larger). Read it from the registry for the exact digest, for example:
+
+```
+docker buildx imagetools inspect --raw ghcr.io/perkbridge/nile-mt5-runtime@sha256:... | jq '[.layers[].size] | add'
+```
+
+A version without `transfer_bytes` shows no size. The value is covered by the signature like everything else.
+
 ## Signature
 
 `packages.json.sig` is an Ed25519 signature over the exact bytes of `packages.json`, made with the catalog key
