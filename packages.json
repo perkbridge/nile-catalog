@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-10-26T20:30:00Z",
+  "updated_at": "2026-10-30T18:30:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -9,8 +9,15 @@
       "description": "MetaTrader 5 terminal runtime with the Nile bridge.",
       "runtime_type": "metatrader5",
       "path": "nile-mt5-runtime",
-      "latest": "main-6091472",
+      "latest": "main-be088e5",
       "versions": [
+        {
+          "version": "main-be088e5",
+          "published_at": "2026-10-30T18:17:41Z",
+          "digest": "sha256:9479ae7c9bf7b42dc673b07c009f3661b4f524034fdd88d9cfce282e408c2ca4",
+          "transfer_bytes": 915504595,
+          "notes": "Edit SL/TP on an open position (NileTrade modify_position, nile 1.0.3-beta); Wine 11.20. Supersedes main-6091472."
+        },
         {
           "version": "main-6091472",
           "published_at": "2026-10-25T10:04:49Z",
