@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-10-31T12:05:00Z",
+  "updated_at": "2026-10-31T18:25:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -9,8 +9,15 @@
       "description": "MetaTrader 5 terminal runtime with the Nile bridge.",
       "runtime_type": "metatrader5",
       "path": "nile-mt5-runtime",
-      "latest": "main-51bd371",
+      "latest": "main-a3ffb64",
       "versions": [
+        {
+          "version": "main-a3ffb64",
+          "published_at": "2026-10-31T18:21:58Z",
+          "digest": "sha256:656d3a3cc0bbecceead7cdb352b1ebf2864f6abc074db86e7eee1a2f04595cc6",
+          "transfer_bytes": 915505678,
+          "notes": "Time rules make a new plan after a restart, reboot or switch inside a block (nile 1.0.5-beta); Wine 11.20. Supersedes main-51bd371."
+        },
         {
           "version": "main-51bd371",
           "published_at": "2026-10-31T12:02:49Z",
