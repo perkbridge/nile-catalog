@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-11-04T17:40:00Z",
+  "updated_at": "2026-11-05T18:07:17Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -9,8 +9,15 @@
       "description": "MetaTrader 5 terminal runtime with the Nile bridge.",
       "runtime_type": "metatrader5",
       "path": "nile-mt5-runtime",
-      "latest": "main-fbfc5ae",
+      "latest": "main-a7fca75",
       "versions": [
+        {
+          "version": "main-a7fca75",
+          "published_at": "2026-11-05T18:07:17Z",
+          "digest": "sha256:bfb73f02bf91341adde9620b8078a778f984691c2e2a2f29dcd4a55cb0dfe3ac",
+          "transfer_bytes": 915881833,
+          "notes": "Rebuilt from nile main a7fca75 for 1.1.3-beta: risk journals are seeded with the account's earlier orders (ADR-034 A2); Wine 11.20. Supersedes main-fbfc5ae."
+        },
         {
           "version": "main-fbfc5ae",
           "published_at": "2026-11-04T17:40:00Z",
@@ -40,8 +47,15 @@
       "description": "MetaTrader 5 terminal runtime with the Nile bridge and the DirectConnect File channel, for deployments that use DirectConnect.",
       "runtime_type": "metatrader5",
       "path": "nile-mt5-runtime-direct",
-      "latest": "main-fbfc5ae",
+      "latest": "main-a7fca75",
       "versions": [
+        {
+          "version": "main-a7fca75",
+          "published_at": "2026-11-05T18:07:17Z",
+          "digest": "sha256:5d0b1e3bb3bd584b08f664d6bcdbc3d070150bf779d3135e295f07c3506d8e9c",
+          "transfer_bytes": 921753244,
+          "notes": "DirectConnect image (File channel) rebuilt from nile main a7fca75 for 1.1.3-beta: risk journals are seeded with the account's earlier orders (ADR-034 A2); Wine 11.20. Supersedes main-fbfc5ae."
+        },
         {
           "version": "main-fbfc5ae",
           "published_at": "2026-11-04T17:40:00Z",
