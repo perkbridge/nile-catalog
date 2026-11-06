@@ -2,5 +2,5 @@
   "schema": "nile.catalog.signature/v1",
   "key_id": "nile-catalog-1",
   "algorithm": "ed25519",
-  "signature": "F25PAgS2ttfI9PTnTK8s137j4Buz2pdTrglgwXwy+ftwdhygsqHRqJWzNNY6yD0mx2T5lkK7+wMxDG6tC0tsCw=="
+  "signature": "Yis2O2l9f6vc+yiaUNDa1hM0mAL5VyslWq2a9zZje5tWnuc1AItty3H9QIPXbMjbbt9pGZebvFV5CXgD/noOBg=="
 }
