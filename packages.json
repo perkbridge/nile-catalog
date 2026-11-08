@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-11-08T10:05:00Z",
+  "updated_at": "2026-11-08T11:00:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -24,13 +24,6 @@
           "digest": "sha256:c8cbba3f5ad7c506524c439aec6df4eae1092c05f8bb350b5b5ff76d1ac283ce",
           "transfer_bytes": 915932882,
           "notes": "Stored broker server files: a deployment loads the signed server list its terminal saved earlier instead of searching again (nile 1.1.5-beta); Wine 11.20. Supersedes main-4954508."
-        },
-        {
-          "version": "main-4954508",
-          "published_at": "2026-11-06T08:50:00Z",
-          "digest": "sha256:6740dc036aca909dcbe5bb10e2add1a9a77fb9aaf8ae0ee8d42be6806ba5aec9",
-          "transfer_bytes": 915878809,
-          "notes": "Quote age limit for market orders only, fill counted until listed, ca-certificates pin (nile 1.1.4-beta); Wine 11.20. Supersedes main-a7fca75."
         }
       ]
     },
@@ -55,13 +48,6 @@
           "digest": "sha256:b32c25edc1502ea2d30d34124cfde8f9914b33615745cc03fcf6832cc6fd5f7d",
           "transfer_bytes": 921858319,
           "notes": "DirectConnect File channel, same changes as nile-mt5-runtime main-41c2b76 (nile 1.1.5-beta); Wine 11.20. Supersedes main-4954508."
-        },
-        {
-          "version": "main-4954508",
-          "published_at": "2026-11-06T08:50:00Z",
-          "digest": "sha256:495f9c73778c24d388b3b8b98174a227ea88f08c81d66caab7ce33430bd81fbc",
-          "transfer_bytes": 921750580,
-          "notes": "DirectConnect File channel, same changes as nile-mt5-runtime main-4954508 (nile 1.1.4-beta); Wine 11.20. Supersedes main-a7fca75."
         }
       ]
     }
