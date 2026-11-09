@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-11-08T11:00:00Z",
+  "updated_at": "2026-11-09T21:00:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -48,6 +48,23 @@
           "digest": "sha256:b32c25edc1502ea2d30d34124cfde8f9914b33615745cc03fcf6832cc6fd5f7d",
           "transfer_bytes": 921858319,
           "notes": "DirectConnect File channel, same changes as nile-mt5-runtime main-41c2b76 (nile 1.1.5-beta); Wine 11.20. Supersedes main-4954508."
+        }
+      ]
+    },
+    {
+      "package": "nile-python-runtime",
+      "name": "Python strategy runtime",
+      "description": "Python 3.12 runtime for Nile strategies, run as a separate container next to a trading terminal.",
+      "runtime_type": "python",
+      "path": "nile-python-runtime",
+      "latest": "3.12-main-010d18af",
+      "versions": [
+        {
+          "version": "3.12-main-010d18af",
+          "published_at": "2026-11-09T21:05:00Z",
+          "digest": "sha256:e2ee067505e720379fa92f47102abf67b8fc1dd496d97138ec059303e17bc542",
+          "transfer_bytes": 48197645,
+          "notes": "First Python strategy runtime (Python 3.12), built from nile main 010d18af (nile 1.2.0-alpha.1)."
         }
       ]
     }
