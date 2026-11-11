@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-11-09T21:00:00Z",
+  "updated_at": "2026-11-11T18:45:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -9,21 +9,21 @@
       "description": "MetaTrader 5 terminal runtime with the Nile bridge.",
       "runtime_type": "metatrader5",
       "path": "nile-mt5-runtime",
-      "latest": "main-73f6535",
+      "latest": "main-213a8d4",
       "versions": [
+        {
+          "version": "main-213a8d4",
+          "published_at": "2026-11-11T18:45:00Z",
+          "digest": "sha256:99ee19def2faebae37817f4cae6e7bc501c0e593acfbe4227d16b19f97e7d764",
+          "transfer_bytes": 916068613,
+          "notes": "Position protections in nile-risk and NileTrade 1.3.0, stops in units and partial closes (ADR-054, nile 1.2.0-beta); Wine 11.20. Supersedes main-73f6535."
+        },
         {
           "version": "main-73f6535",
           "published_at": "2026-11-08T10:05:00Z",
           "digest": "sha256:c0f95226df52da76902423206790246a03c60f61dfbfad4a88dc582829f12bd3",
           "transfer_bytes": 915932880,
           "notes": "DirectConnect socket directory 0710 and socket 0666 so the agent's proxy can connect (ADR-045 Amendment 3, nile 1.1.7-beta); Wine 11.20. Supersedes main-41c2b76."
-        },
-        {
-          "version": "main-41c2b76",
-          "published_at": "2026-11-06T19:10:00Z",
-          "digest": "sha256:c8cbba3f5ad7c506524c439aec6df4eae1092c05f8bb350b5b5ff76d1ac283ce",
-          "transfer_bytes": 915932882,
-          "notes": "Stored broker server files: a deployment loads the signed server list its terminal saved earlier instead of searching again (nile 1.1.5-beta); Wine 11.20. Supersedes main-4954508."
         }
       ]
     },
@@ -33,21 +33,21 @@
       "description": "MetaTrader 5 terminal runtime with the Nile bridge and the DirectConnect File channel, for deployments that use DirectConnect.",
       "runtime_type": "metatrader5",
       "path": "nile-mt5-runtime-direct",
-      "latest": "main-73f6535",
+      "latest": "main-213a8d4",
       "versions": [
+        {
+          "version": "main-213a8d4",
+          "published_at": "2026-11-11T18:45:00Z",
+          "digest": "sha256:48488d7bcc5f7aae2a841b96f7998779f948206a212fa2ff961b267d1a9d21c5",
+          "transfer_bytes": 922128798,
+          "notes": "DirectConnect File channel, same changes as nile-mt5-runtime main-213a8d4 (nile 1.2.0-beta); Wine 11.20. Supersedes main-73f6535."
+        },
         {
           "version": "main-73f6535",
           "published_at": "2026-11-08T10:05:00Z",
           "digest": "sha256:88c855dc929a9e43ffef30cda532a0173d3cfd843071ac4bb8629d35c8a41d25",
           "transfer_bytes": 921858321,
           "notes": "DirectConnect File channel, same changes as nile-mt5-runtime main-73f6535 (nile 1.1.7-beta); Wine 11.20. Supersedes main-41c2b76."
-        },
-        {
-          "version": "main-41c2b76",
-          "published_at": "2026-11-06T19:10:00Z",
-          "digest": "sha256:b32c25edc1502ea2d30d34124cfde8f9914b33615745cc03fcf6832cc6fd5f7d",
-          "transfer_bytes": 921858319,
-          "notes": "DirectConnect File channel, same changes as nile-mt5-runtime main-41c2b76 (nile 1.1.5-beta); Wine 11.20. Supersedes main-4954508."
         }
       ]
     },
