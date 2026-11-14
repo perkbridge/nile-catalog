@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-11-13T19:00:00Z",
+  "updated_at": "2026-11-14T18:15:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -9,8 +9,15 @@
       "description": "MetaTrader 5 terminal runtime with the Nile bridge.",
       "runtime_type": "metatrader5",
       "path": "nile-mt5-runtime",
-      "latest": "main-102c6ef",
+      "latest": "main-253a447",
       "versions": [
+        {
+          "version": "main-253a447",
+          "published_at": "2026-11-14T18:15:00Z",
+          "digest": "sha256:ea1b2f816d1b325cd7c3e67ed3187d8268e17b7b8cc11859765069b83d7efb97",
+          "transfer_bytes": 925031084,
+          "notes": "NileTrade 1.5.0: closed positions report why they closed (stop out, close in an MT5 terminal, besides order, SL, TP and outside the platform) (nile #669); includes the stops-in-units fix of main-102c6ef (#666); Go 1.27.4; Wine 11.20. Supersedes main-102c6ef."
+        },
         {
           "version": "main-102c6ef",
           "published_at": "2026-11-13T19:00:00Z",
@@ -33,8 +40,15 @@
       "description": "MetaTrader 5 terminal runtime with the Nile bridge and the DirectConnect File channel, for deployments that use DirectConnect.",
       "runtime_type": "metatrader5",
       "path": "nile-mt5-runtime-direct",
-      "latest": "main-102c6ef",
+      "latest": "main-253a447",
       "versions": [
+        {
+          "version": "main-253a447",
+          "published_at": "2026-11-14T18:15:00Z",
+          "digest": "sha256:1551f6ba6b5fd763ee63f07f8ee18c469f0e5e1eb917e5503b756568fe3d4142",
+          "transfer_bytes": 931546245,
+          "notes": "DirectConnect File channel, same changes as nile-mt5-runtime main-253a447 (NileTrade 1.5.0 close reasons, nile #669); Go 1.27.4; Wine 11.20. Supersedes main-102c6ef."
+        },
         {
           "version": "main-102c6ef",
           "published_at": "2026-11-13T19:00:00Z",
