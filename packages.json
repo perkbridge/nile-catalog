@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-11-14T18:15:00Z",
+  "updated_at": "2026-11-15T18:45:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -9,8 +9,15 @@
       "description": "MetaTrader 5 terminal runtime with the Nile bridge.",
       "runtime_type": "metatrader5",
       "path": "nile-mt5-runtime",
-      "latest": "main-253a447",
+      "latest": "main-e66c718",
       "versions": [
+        {
+          "version": "main-e66c718",
+          "published_at": "2026-11-15T18:45:00Z",
+          "digest": "sha256:a766c5081608dcb90b5733b959747616b24fb59c36900ef5719d8c203ac27a18",
+          "transfer_bytes": 925039018,
+          "notes": "NileTrade 1.6.0: pip size per instrument for stops in pips, stops inside the spread refused before sending (stops_invalid), route rules applied to route orders (nile #780, #779); Go 1.27.4; Wine 11.20. Supersedes main-253a447."
+        },
         {
           "version": "main-253a447",
           "published_at": "2026-11-14T18:15:00Z",
@@ -40,8 +47,15 @@
       "description": "MetaTrader 5 terminal runtime with the Nile bridge and the DirectConnect File channel, for deployments that use DirectConnect.",
       "runtime_type": "metatrader5",
       "path": "nile-mt5-runtime-direct",
-      "latest": "main-253a447",
+      "latest": "main-e66c718",
       "versions": [
+        {
+          "version": "main-e66c718",
+          "published_at": "2026-11-15T18:45:00Z",
+          "digest": "sha256:58108111b8598ac7f46697b43cce9eb533c03004380de52266ee9961cd0e714f",
+          "transfer_bytes": 931558633,
+          "notes": "DirectConnect File channel, same changes as nile-mt5-runtime main-e66c718 (NileTrade 1.6.0, nile #780, #779); Go 1.27.4; Wine 11.20. Supersedes main-253a447."
+        },
         {
           "version": "main-253a447",
           "published_at": "2026-11-14T18:15:00Z",
