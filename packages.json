@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-11-15T18:45:00Z",
+  "updated_at": "2026-11-16T21:30:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -9,8 +9,15 @@
       "description": "MetaTrader 5 terminal runtime with the Nile bridge.",
       "runtime_type": "metatrader5",
       "path": "nile-mt5-runtime",
-      "latest": "main-e66c718",
+      "latest": "main-b66c4e7",
       "versions": [
+        {
+          "version": "main-b66c4e7",
+          "published_at": "2026-11-16T21:30:00Z",
+          "digest": "sha256:020b54020f97c322fc3fb48910f50dc753054675a31ff054799bbe2733427ee9",
+          "transfer_bytes": 925033650,
+          "notes": "NileTrade 1.7.0: tick values on each quote (nile #805); a bracket protection whose position closed before binding ends instead of staying active (nile #796); Go 1.27.4; Wine 11.20. Supersedes main-e66c718."
+        },
         {
           "version": "main-e66c718",
           "published_at": "2026-11-15T18:45:00Z",
@@ -47,8 +54,15 @@
       "description": "MetaTrader 5 terminal runtime with the Nile bridge and the DirectConnect File channel, for deployments that use DirectConnect.",
       "runtime_type": "metatrader5",
       "path": "nile-mt5-runtime-direct",
-      "latest": "main-e66c718",
+      "latest": "main-b66c4e7",
       "versions": [
+        {
+          "version": "main-b66c4e7",
+          "published_at": "2026-11-16T21:30:00Z",
+          "digest": "sha256:aab8cba46c9b38e7a6d034f1b83198b6be16e39cc453c62880bccfce0b48674a",
+          "transfer_bytes": 931554931,
+          "notes": "DirectConnect File channel, same changes as nile-mt5-runtime main-b66c4e7 (NileTrade 1.7.0, nile #805, #796); Go 1.27.4; Wine 11.20. Supersedes main-e66c718."
+        },
         {
           "version": "main-e66c718",
           "published_at": "2026-11-15T18:45:00Z",
