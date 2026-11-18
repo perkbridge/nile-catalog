@@ -38,6 +38,18 @@
                   "type": "integer",
                   "minimum": 1,
                   "maximum": 1099511627776
+                },
+                "venue": {
+                  "description": "Venue connector images only (ADR-060): the venue the image trades on, the floor of its settle margin and the broker gateway user in the single container. Absent for MetaTrader 5 and Python images.",
+                  "type": "object",
+                  "additionalProperties": false,
+                  "required": ["name", "settle_margin_ms"],
+                  "properties": {
+                    "name": { "type": "string", "pattern": "^[a-z0-9_]+$" },
+                    "settle_margin_ms": { "type": "integer", "minimum": 0 },
+                    "gateway_uid": { "type": "integer", "minimum": 1 },
+                    "gateway_gid": { "type": "integer", "minimum": 1 }
+                  }
                 }
               }
             }
