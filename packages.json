@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-11-19T21:45:00Z",
+  "updated_at": "2026-11-19T22:45:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -99,8 +99,15 @@
       "description": "Python 3.12 runtime for Nile strategies, run as a separate container next to a trading terminal.",
       "runtime_type": "python",
       "path": "nile-python-runtime",
-      "latest": "3.12-main-010d18af",
+      "latest": "3.12-main-0604df7d",
       "versions": [
+        {
+          "version": "3.12-main-0604df7d",
+          "published_at": "2026-11-19T22:45:00Z",
+          "digest": "sha256:159fb3506eec44a4d8668afc72c3559bdd7833af9f66c619cc2a643dad774a78",
+          "transfer_bytes": 50413091,
+          "notes": "Python 3.12 strategy runtime, built from nile main 0604df7d: apt 3.0.4 (CVE-2026-109518) and zlib 1.3.1-1+deb13u1 (CVE-2026-85091) from the Debian security builds (nile #963). Supersedes 3.12-main-010d18af."
+        },
         {
           "version": "3.12-main-010d18af",
           "published_at": "2026-11-09T21:05:00Z",
@@ -116,14 +123,14 @@
       "description": "Interactive Brokers runtime: one container per account with nile-risk, the Nile bridge and the GPL TWS API shim. IB Gateway is downloaded on your server at first start and checked against pinned hashes.",
       "runtime_type": "ib",
       "path": "nile-ib-runtime",
-      "latest": "main-c0b281ef",
+      "latest": "main-0604df7d",
       "versions": [
         {
-          "version": "main-c0b281ef",
-          "published_at": "2026-11-19T21:45:00Z",
-          "digest": "sha256:960d961a636d461fa4500f2345ca293b2c244449074ef22b321505adbb894577",
-          "transfer_bytes": 202937296,
-          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. IB login and sign-in status updates (nile #944 and later); OpenJDK 17.0.21.1 fixes CVE-2026-114938. Gateway 10.50.1h, TWS API 1050.02, ib-tws-shim v0.2.0. Replaces main-99d8c5c2.",
+          "version": "main-0604df7d",
+          "published_at": "2026-11-19T22:45:00Z",
+          "digest": "sha256:5369d8e1bf880f3be01828289f387bb5ea19532b05cdb36257af376489a1fa8f",
+          "transfer_bytes": 202937245,
+          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. Fresh-layer rebuild from nile main 0604df7d (nile #963 build hardening); OpenJDK 17.0.21.1. Gateway 10.50.1h, TWS API 1050.02, ib-tws-shim v0.2.0. Replaces main-c0b281ef.",
           "venue": {
             "name": "ib",
             "settle_margin_ms": 3000,
