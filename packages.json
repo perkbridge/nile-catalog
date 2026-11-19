@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-11-19T17:40:00Z",
+  "updated_at": "2026-11-19T18:35:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -116,79 +116,14 @@
       "description": "Interactive Brokers runtime: one container per account with nile-risk, the Nile bridge and the GPL TWS API shim. IB Gateway is downloaded on your server at first start and checked against pinned hashes.",
       "runtime_type": "ib",
       "path": "nile-ib-runtime",
-      "latest": "main-c517da48",
+      "latest": "main-99d8c5c2",
       "versions": [
         {
-          "version": "main-c517da48",
-          "published_at": "2026-11-19T17:40:00Z",
-          "digest": "sha256:2ef5a5f3957bbbe96bfe2817888df6ca9719275086d3c3c8d7264c2e8bc6cec0",
-          "transfer_bytes": 202925448,
-          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. The gateway API port follows the trading mode (4002 paper, 4001 live); only these ports are accepted and the port check proves sign-in (nile #941). Gateway 10.50.1h, TWS API 1050.02, ib-tws-shim v0.2.0. Supersedes main-9797201e.",
-          "venue": {
-            "name": "ib",
-            "settle_margin_ms": 3000,
-            "gateway_uid": 20001,
-            "gateway_gid": 20001
-          }
-        },
-        {
-          "version": "main-9797201e",
-          "published_at": "2026-11-19T16:30:00Z",
-          "digest": "sha256:564d93023f45accd13a85e9386e10048cadfad30b5c892bacd76e0d91c7d4cd5",
-          "transfer_bytes": 202925241,
-          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. ib-login clicks Paper Log In, accepts the paper-account warning and logs which gateway ports answer (nile #939). Gateway 10.50.1h, TWS API 1050.02, ib-tws-shim v0.2.0. Supersedes main-a0bc89fc.",
-          "venue": {
-            "name": "ib",
-            "settle_margin_ms": 3000,
-            "gateway_uid": 20001,
-            "gateway_gid": 20001
-          }
-        },
-        {
-          "version": "main-a0bc89fc",
-          "published_at": "2026-11-19T15:55:00Z",
-          "digest": "sha256:7b5287524d63e598985da1220686ba6e290fb8f735183a6d9676f5c6cc6304f1",
-          "transfer_bytes": 202924267,
-          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. ib-login gives the gateway, shim and installer JVMs user.home and logs the gateway exit status (nile #937). Gateway 10.50.1h, TWS API 1050.02, ib-tws-shim v0.2.0. Supersedes main-5c5f7f8b.",
-          "venue": {
-            "name": "ib",
-            "settle_margin_ms": 3000,
-            "gateway_uid": 20001,
-            "gateway_gid": 20001
-          }
-        },
-        {
-          "version": "main-5c5f7f8b",
-          "published_at": "2026-11-19T14:45:00Z",
-          "digest": "sha256:2a358cfb0f7e8cf886f514a48cb2e133e6c6c079156bdc03c4a95fd3e4e0ea98",
-          "transfer_bytes": 202922976,
-          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. The IB bridge keeps its state in /var/lib/nile-venue by default; the supervisor passes the state and lease folders (nile #933). Gateway 10.50.1h, TWS API 1050.02, ib-tws-shim v0.2.0. Supersedes main-6b61e510.",
-          "venue": {
-            "name": "ib",
-            "settle_margin_ms": 3000,
-            "gateway_uid": 20001,
-            "gateway_gid": 20001
-          }
-        },
-        {
-          "version": "main-6b61e510",
-          "published_at": "2026-11-19T13:00:00Z",
-          "digest": "sha256:a0ec28953e3dcf52b4e6ed2d6b35b812f9235c72ebc0d7909a81668d133d31e1",
-          "transfer_bytes": 202922041,
-          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. IB state folder without setgid (mode 1770) with a startup check (nile #930). Gateway 10.50.1h, TWS API 1050.02, ib-tws-shim v0.2.0. Supersedes main-9be83586.",
-          "venue": {
-            "name": "ib",
-            "settle_margin_ms": 3000,
-            "gateway_uid": 20001,
-            "gateway_gid": 20001
-          }
-        },
-        {
-          "version": "main-9be83586",
-          "published_at": "2026-11-18T22:00:00Z",
-          "digest": "sha256:075fbb1eeb99e8ce2f23397513e628aad1a7b7a4c5754131b6f6a5113a4c1129",
-          "transfer_bytes": 202921840,
-          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. Gateway 10.50.1h, TWS API 1050.02, ib-tws-shim v0.2.0; every order passes nile-risk, the agent closes the gateway API port (nile #903, #907, #909, #918).",
+          "version": "main-99d8c5c2",
+          "published_at": "2026-11-19T18:35:00Z",
+          "digest": "sha256:97882a40c58db5999831f99a65e75f37214b8723c40b463e0c99e1f81b722043",
+          "transfer_bytes": 202933931,
+          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. After sign-in the login agent turns off the gateway Read-Only API (nile #943). Gateway 10.50.1h, TWS API 1050.02, ib-tws-shim v0.2.0. Replaces all earlier versions in this catalog.",
           "venue": {
             "name": "ib",
             "settle_margin_ms": 3000,
