@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-11-19T18:35:00Z",
+  "updated_at": "2026-11-19T21:45:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -116,14 +116,14 @@
       "description": "Interactive Brokers runtime: one container per account with nile-risk, the Nile bridge and the GPL TWS API shim. IB Gateway is downloaded on your server at first start and checked against pinned hashes.",
       "runtime_type": "ib",
       "path": "nile-ib-runtime",
-      "latest": "main-99d8c5c2",
+      "latest": "main-c0b281ef",
       "versions": [
         {
-          "version": "main-99d8c5c2",
-          "published_at": "2026-11-19T18:35:00Z",
-          "digest": "sha256:97882a40c58db5999831f99a65e75f37214b8723c40b463e0c99e1f81b722043",
-          "transfer_bytes": 202933931,
-          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. After sign-in the login agent turns off the gateway Read-Only API (nile #943). Gateway 10.50.1h, TWS API 1050.02, ib-tws-shim v0.2.0. Replaces all earlier versions in this catalog.",
+          "version": "main-c0b281ef",
+          "published_at": "2026-11-19T21:45:00Z",
+          "digest": "sha256:960d961a636d461fa4500f2345ca293b2c244449074ef22b321505adbb894577",
+          "transfer_bytes": 202937296,
+          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. IB login and sign-in status updates (nile #944 and later); OpenJDK 17.0.21.1 fixes CVE-2026-114938. Gateway 10.50.1h, TWS API 1050.02, ib-tws-shim v0.2.0. Replaces main-99d8c5c2.",
           "venue": {
             "name": "ib",
             "settle_margin_ms": 3000,

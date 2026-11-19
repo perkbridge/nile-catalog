@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-19T18:35:00Z",
+  "updated_at": "2026-11-19T21:45:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -124,7 +124,7 @@
       "package": "nile-ib-runtime",
       "versions": [
         {
-          "version": "main-99d8c5c2",
+          "version": "main-c0b281ef",
           "tested_with": [
             {
               "os": "Ubuntu 24.04 LTS",
