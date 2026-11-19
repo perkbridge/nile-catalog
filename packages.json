@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-11-19T14:45:00Z",
+  "updated_at": "2026-11-19T15:55:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -116,8 +116,21 @@
       "description": "Interactive Brokers runtime: one container per account with nile-risk, the Nile bridge and the GPL TWS API shim. IB Gateway is downloaded on your server at first start and checked against pinned hashes.",
       "runtime_type": "ib",
       "path": "nile-ib-runtime",
-      "latest": "main-5c5f7f8b",
+      "latest": "main-a0bc89fc",
       "versions": [
+        {
+          "version": "main-a0bc89fc",
+          "published_at": "2026-11-19T15:55:00Z",
+          "digest": "sha256:7b5287524d63e598985da1220686ba6e290fb8f735183a6d9676f5c6cc6304f1",
+          "transfer_bytes": 202924267,
+          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. ib-login gives the gateway, shim and installer JVMs user.home and logs the gateway exit status (nile #937). Gateway 10.50.1h, TWS API 1050.02, ib-tws-shim v0.2.0. Supersedes main-5c5f7f8b.",
+          "venue": {
+            "name": "ib",
+            "settle_margin_ms": 3000,
+            "gateway_uid": 20001,
+            "gateway_gid": 20001
+          }
+        },
         {
           "version": "main-5c5f7f8b",
           "published_at": "2026-11-19T14:45:00Z",
