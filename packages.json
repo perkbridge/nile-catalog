@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-11-19T22:40:00Z",
+  "updated_at": "2026-11-20T09:35:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -123,14 +123,14 @@
       "description": "Interactive Brokers runtime: one container per account with nile-risk, the Nile bridge and the GPL TWS API shim. IB Gateway is downloaded on your server at first start and checked against pinned hashes.",
       "runtime_type": "ib",
       "path": "nile-ib-runtime",
-      "latest": "main-2fa4be17",
+      "latest": "main-ca01cbc6",
       "versions": [
         {
-          "version": "main-2fa4be17",
-          "published_at": "2026-11-19T22:40:00Z",
-          "digest": "sha256:a83832f4e54554e76f0b8eaea186b079dbe39d3fc55758908db53a9adddbbc4c",
-          "transfer_bytes": 202939709,
-          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. The bridge reads each venue part with its own time limit, so reconciliation survives a held completed-orders read (nile #968). OpenJDK 17.0.21.1. Gateway 10.50.1h, TWS API 1050.02, ib-tws-shim v0.2.0. Replaces main-0604df7d.",
+          "version": "main-ca01cbc6",
+          "published_at": "2026-11-20T09:35:00Z",
+          "digest": "sha256:ea5577f8e8f5699f394440ce52adbe89eba8bac10cc5dc894cf5589cca413276",
+          "transfer_bytes": 202947498,
+          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. The bridge writes a health file and the venue supervisor watches it, so a stalled bridge is reported (nile #980). OpenJDK 17.0.21.1. Gateway 10.50.1h, TWS API 1050.02, ib-tws-shim v0.2.0. Replaces main-2fa4be17.",
           "venue": {
             "name": "ib",
             "settle_margin_ms": 3000,
