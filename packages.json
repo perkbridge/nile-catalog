@@ -130,7 +130,7 @@
           "published_at": "2026-11-20T10:15:00Z",
           "digest": "sha256:4f76957014a7cd832d95ba8e3b3eea783febb340338d4bdd6256d1843ecac02e",
           "transfer_bytes": 202955464,
-          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. IB login chooses Auto restart instead of the daily auto log off, and the trade channel for nile-risk opens once the bridge is ready (nile #982). Bridge health file watched by the venue supervisor (nile #980). OpenJDK 17.0.21.1. Gateway 10.50.1h, TWS API 1050.02, ib-tws-shim v0.2.0. Replaces main-ca01cbc6.",
+          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. IB login uses Auto restart instead of the daily log off; trade channel opens once the bridge is ready (nile #982). OpenJDK 17.0.21.1. Gateway 10.50.1h, TWS API 1050.02, shim v0.2.0. Replaces main-ca01cbc6.",
           "venue": {
             "name": "ib",
             "settle_margin_ms": 3000,
