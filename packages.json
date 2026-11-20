@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-11-20T11:30:00Z",
+  "updated_at": "2026-11-20T12:15:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -123,14 +123,14 @@
       "description": "Interactive Brokers runtime: one container per account with nile-risk, the Nile bridge and the GPL TWS API shim. IB Gateway is downloaded on your server at first start and checked against pinned hashes.",
       "runtime_type": "ib",
       "path": "nile-ib-runtime",
-      "latest": "main-9d320f46",
+      "latest": "main-05944dd2",
       "versions": [
         {
-          "version": "main-9d320f46",
-          "published_at": "2026-11-20T11:30:00Z",
-          "digest": "sha256:ebad2c330d0d3fab34739674c8c4e06348b6360541b907d02a71c2da377ca426",
-          "transfer_bytes": 202960070,
-          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. Logs why the account summary cannot be read; Auto restart waits for the gateway after the Read-Only change (nile #987). OpenJDK 17.0.21.1. Gateway 10.50.1h, TWS API 1050.02, shim v0.2.0. Replaces main-f5107227.",
+          "version": "main-05944dd2",
+          "published_at": "2026-11-20T12:15:00Z",
+          "digest": "sha256:833bf7b63719848857f276ced43794fc0641d1ff31709623bc5e81110361f867",
+          "transfer_bytes": 202969262,
+          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. One account summary subscription per connection (IB error 322); Auto restart OK waits for IB's save (nile #989). OpenJDK 17.0.21.1. Gateway 10.50.1h, TWS API 1050.02, shim v0.2.0. Replaces main-9d320f46.",
           "venue": {
             "name": "ib",
             "settle_margin_ms": 3000,
