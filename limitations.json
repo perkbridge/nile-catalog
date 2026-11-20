@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "updated_at": "2026-11-20T12:15:00Z",
+  "updated_at": "2026-11-20T15:10:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -124,7 +124,7 @@
       "package": "nile-ib-runtime",
       "versions": [
         {
-          "version": "main-05944dd2",
+          "version": "main-e92f8415",
           "tested_with": [
             {
               "os": "Ubuntu 24.04 LTS",
@@ -145,9 +145,14 @@
               "description": "The download of IB's gateway and API package at first start and the gateway signing in to IB have not been run against real IB. A host that firewalls outbound traffic needs IB's hosts allowed (hosting guide)."
             },
             {
+              "status": "unverified",
+              "item": "Forex, spot metals, index CFDs",
+              "description": "Added in this release (#997); paper accounts only until verified against real IB"
+            },
+            {
               "status": "unsupported",
-              "item": "Instruments other than stocks",
-              "description": "Stocks only in this release."
+              "item": "Futures, options, bonds",
+              "description": "Not in this release; planned as a separate extensions API (ADR-060 Amendment 3)"
             }
           ]
         }
