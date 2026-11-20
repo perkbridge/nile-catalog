@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-11-20T10:15:00Z",
+  "updated_at": "2026-11-20T11:00:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -123,14 +123,14 @@
       "description": "Interactive Brokers runtime: one container per account with nile-risk, the Nile bridge and the GPL TWS API shim. IB Gateway is downloaded on your server at first start and checked against pinned hashes.",
       "runtime_type": "ib",
       "path": "nile-ib-runtime",
-      "latest": "main-1bbd0355",
+      "latest": "main-f5107227",
       "versions": [
         {
-          "version": "main-1bbd0355",
-          "published_at": "2026-11-20T10:15:00Z",
-          "digest": "sha256:4f76957014a7cd832d95ba8e3b3eea783febb340338d4bdd6256d1843ecac02e",
-          "transfer_bytes": 202955464,
-          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. IB login uses Auto restart instead of the daily log off; trade channel opens once the bridge is ready (nile #982). OpenJDK 17.0.21.1. Gateway 10.50.1h, TWS API 1050.02, shim v0.2.0. Replaces main-ca01cbc6.",
+          "version": "main-f5107227",
+          "published_at": "2026-11-20T11:00:00Z",
+          "digest": "sha256:54a61f32d3cb1c5130d5a61199097674945d083161a18d2fe244721007410292",
+          "transfer_bytes": 202956483,
+          "notes": "Beta, unverified: not yet run against a real IB account. Stocks only. Bridge takes nile.mt5.trade/v1 requests; IB login sets Auto restart in a second settings visit so Read-Only API stays off (nile #984). OpenJDK 17.0.21.1. Gateway 10.50.1h, TWS API 1050.02, shim v0.2.0. Replaces main-1bbd0355.",
           "venue": {
             "name": "ib",
             "settle_margin_ms": 3000,
