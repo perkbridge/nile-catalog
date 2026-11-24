@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-11-24T18:58:00Z",
+  "updated_at": "2026-11-24T19:08:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -99,8 +99,15 @@
       "description": "Python 3.12 runtime for Nile strategies, run as a separate container next to a trading terminal.",
       "runtime_type": "python",
       "path": "nile-python-runtime",
-      "latest": "3.12-main-0604df7d",
+      "latest": "3.12-main-35317cd7",
       "versions": [
+        {
+          "version": "3.12-main-35317cd7",
+          "published_at": "2026-11-24T19:08:00Z",
+          "digest": "sha256:412cd28a261abb1cb405ad3403f7dee0b38478a72d83b458bb2baa71667ee463",
+          "transfer_bytes": 50529209,
+          "notes": "Python 3.12 strategy runtime, built from nile main 35317cd7 with perkbridge-connect 1.9.0b1: bars(..., forming=True) returns the forming bar (nile #1110; on MT5 it needs the MT5 runtime main-35317cd7). Supersedes 3.12-main-0604df7d."
+        },
         {
           "version": "3.12-main-0604df7d",
           "published_at": "2026-11-19T22:45:00Z",
