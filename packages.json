@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-11-24T17:35:00Z",
+  "updated_at": "2026-11-24T18:58:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -123,14 +123,14 @@
       "description": "Interactive Brokers runtime: one container per account with nile-risk, the Nile bridge and the GPL TWS API shim. IB Gateway is downloaded on your server at first start and checked against pinned hashes.",
       "runtime_type": "ib",
       "path": "nile-ib-runtime",
-      "latest": "main-3e2624bc",
+      "latest": "main-35317cd7",
       "versions": [
         {
-          "version": "main-3e2624bc",
-          "published_at": "2026-11-24T17:35:00Z",
-          "digest": "sha256:26e034c8c9fd0488a20b04f3d332b7dd08d066043550e2a06a0a7c3c993407ef",
-          "transfer_bytes": 203444097,
-          "notes": "Beta, unverified: not yet run against a real IB account. Stocks, forex, spot metals and index CFDs on paper. Shim v0.3.0. Market data IB refused is requested again. Stops on pending orders and native IB protections are per-deployment options, off by default. Replaces main-a330e7ca.",
+          "version": "main-35317cd7",
+          "published_at": "2026-11-24T18:58:00Z",
+          "digest": "sha256:87f07ef4d62054a264cc6f791d5a24c00c03c8a86ab2092ca854540899ac7a5a",
+          "transfer_bytes": 203454400,
+          "notes": "Beta, unverified: not yet run against a real IB account. Stocks, forex, spot metals and index CFDs on paper. Shim v0.3.0. Stops on pending orders and native IB protections are per-deployment options, off by default. Rebuilt on main-35317cd7; no IB behaviour change. Replaces main-3e2624bc.",
           "venue": {
             "name": "ib",
             "settle_margin_ms": 3000,
