@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "registry": "ghcr.io/perkbridge",
-  "updated_at": "2026-11-24T19:08:00Z",
+  "updated_at": "2026-11-24T19:32:00Z",
   "packages": [
     {
       "package": "nile-mt5-runtime",
@@ -9,8 +9,15 @@
       "description": "MetaTrader 5 terminal runtime with the Nile bridge.",
       "runtime_type": "metatrader5",
       "path": "nile-mt5-runtime",
-      "latest": "main-b66c4e7",
+      "latest": "main-35317cd7",
       "versions": [
+        {
+          "version": "main-35317cd7",
+          "published_at": "2026-11-24T19:32:00Z",
+          "digest": "sha256:903d15b27b7bccaf9e45a55add740f493c2946a865eba0a92019339d7bc8b63f",
+          "transfer_bytes": 930539362,
+          "notes": "NileTrade 1.9.0: the forming bar on request (bars include_forming, nile #1110); Ubuntu security updates. BTCUSD qualification not run on this image yet. Go 1.27.4; Wine 11.20. Supersedes main-b66c4e7."
+        },
         {
           "version": "main-b66c4e7",
           "published_at": "2026-11-16T21:30:00Z",
